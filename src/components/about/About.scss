@@ -1,0 +1,30 @@
+@use "../../utils/theme";
+.about-section {
+  background: theme.$surface-200;
+  min-height: calc(100vh);
+
+  .section-title {
+  }
+
+  .primary-text {
+  }
+}
+.about-container {
+  gap: 2rem;
+}
+
+.skills-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.separator {
+  background-color: theme.$primary-300;
+  height: 0.4rem;
+  width: 2rem;
+  margin: 0.7rem auto auto auto;
+  border-radius: 2rem;
+}

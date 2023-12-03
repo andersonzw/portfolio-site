@@ -1,0 +1,42 @@
+[
+
+  {
+    "tool": "Javascript",
+    "svg": "https://www.svgrepo.com/show/349419/javascript.svg"
+  },
+  {
+    "tool": "React.js",
+    "svg": "https://www.svgrepo.com/show/452092/react.svg"
+  },
+  {
+    "tool": "Typescript",
+    "svg": "https://www.svgrepo.com/show/349540/typescript.svg"
+  },
+  {
+    "tool": "Vue.js",
+    "svg": "https://www.svgrepo.com/show/452130/vue.svg"
+  },
+  {
+    "tool": "GraphQl",
+    "svg": "https://www.svgrepo.com/show/439175/graphql.svg"
+  },  {
+    "tool": "Sass",
+    "svg": "https://www.svgrepo.com/show/374061/sass.svg"
+  },
+  {
+    "tool": "Firebase",
+    "svg": "https://www.svgrepo.com/show/303670/firebase-1-logo.svg"
+  },
+  {
+    "tool": "Github",
+    "svg": "https://www.svgrepo.com/show/512317/github-142.svg"
+  },
+  {
+    "tool": "Git",
+    "svg": "https://www.svgrepo.com/show/452210/git.svg"
+  },
+  {
+    "tool": "Redux",
+    "svg": "https://www.svgrepo.com/show/452093/redux.svg"
+  }
+]

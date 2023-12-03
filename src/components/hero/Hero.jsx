@@ -7,7 +7,10 @@ const Hero = () => {
         <img className="hero-image" src="/assets/placeholder-pp.jpg" alt="" />
       </div>
       <div className=" hero-description">
-        <h1>Anderson Yang</h1>Statistician/Data Analyst with a hobby in React frontend development
+        <h1 className="section-title">Anderson Yang</h1>
+        <p className="primary-text">
+          Statistician/Data Analyst with a hobby in React frontend development
+        </p>
       </div>
     </section>
   );
