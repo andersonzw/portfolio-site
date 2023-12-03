@@ -1,6 +1,6 @@
 @use "../utils/theme";
 body {
-  background-color: theme.$surface-200;
+  background-color: theme.$surface-100;
   color: #ffff;
 }
 
@@ -8,7 +8,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 a {
@@ -72,4 +71,19 @@ a {
 .orangeText {
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+
+/* media queries */
+@media (min-width: 1536px) {
+  .innerWidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 710px) {
+  .paddings {
+    padding: 5rem;
+  }
 }

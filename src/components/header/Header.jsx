@@ -5,7 +5,7 @@ const Header = () => {
     <header className="paddings flexCenter header-container">
       <div className="flexCenter header-logo">AY</div>
       <div className="flexCenter header-navigator">
-        <a href="/">Top</a>
+        <a href="/">Home</a>
         <a href="/">About</a>
         <a href="/">Projects</a>
       </div>
