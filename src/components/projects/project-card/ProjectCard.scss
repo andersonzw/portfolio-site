@@ -1,0 +1,60 @@
+@use "../../../utils/theme";
+
+.project-card {
+  height: 300px;
+  width: 500px;
+  position: relative;
+  display: flex;
+  animation: 1s ease 0s 1 normal none running fadeInUp;
+  outline: 2px solid rgb(187, 187, 187);
+  border-radius: 15px;
+
+
+  .card-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -10;
+
+  }
+  .card-description {
+    align-self: flex-end;
+    opacity: 0;
+    vertical-align: bottom;
+    padding: 1rem 1.5rem;
+    margin-top: auto;
+    gap: 0.5rem;
+    h2 {
+      font-size: 2rem;
+      text-transform: capitalize;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+  }
+}
+//
+
+.project-card:hover::before {
+    content: "";
+    background: linear-gradient(to bottom, transparent 0%, black 100%);
+    position: absolute;
+    inset: 0;
+    opacity: 0.8;
+    border-radius: 15px;
+
+
+
+  }
+.project-card:hover .card-description {
+  opacity: 1;
+  transform: translateY(-10%);
+  transition: opacity 270ms ease-in-out 0s, transform 270ms ease-in-out 0s;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  transition: opacity 270ms ease-in-out 0s, transform 270ms ease-in-out 0s;
+}

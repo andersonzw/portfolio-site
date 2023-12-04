@@ -1,0 +1,14 @@
+@use "../../utils/theme";
+
+.projects-section {
+    min-height: calc(100vh);
+}
+
+.projects-container {
+    gap: 2rem;
+}
+
+.project-list-container{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

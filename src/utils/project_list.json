@@ -1,0 +1,30 @@
+[
+  {
+    "projectName": "project",
+    "image": "/assets/placeholder-proj.jpeg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies interdum elit. ",
+    "tools": ["tool1", "tool2", "tool3", "tool4"],
+    "link": "https://www.google.com/"
+  },
+  {
+    "projectName": "project1",
+    "image": "/assets/placeholder-proj.jpeg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies interdum elit. Ut ve",
+    "tools": ["tool1", "tool2", "tool3", "tool4"],
+    "link": "https://www.google.com/"
+  },
+  {
+    "projectName": "project2",
+    "image": "/assets/placeholder-proj.jpeg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies interdum elit. Ut vehicula odio vel nibh suscipit, ullamcorper sollicitudin sa.",
+    "tools": ["tool1", "tool2", "tool3", "tool4"],
+    "link": "https://www.google.com/"
+  },
+  {
+    "projectName": "project3",
+    "image": "/assets/placeholder-proj.jpeg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies interdum elit. Ut vehicula odio vel nibh suscipit, ullamcorper sollicitudin sapien ornare. Aliquam lobortis magna diam, eu faucibus sapien imperdiet sit amet.",
+    "tools": ["tool1", "tool2", "tool3", "tool4"],
+    "link": "https://www.google.com/"
+  }
+]
