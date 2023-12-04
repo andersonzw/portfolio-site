@@ -3,7 +3,7 @@
     "projectName": "project",
     "image": "/assets/placeholder-proj.jpeg",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies interdum elit. ",
-    "tools": ["tool1", "tool2", "tool3", "tool4"],
+    "tools": ["Javascript", "React", "Redux", "Verylongword"],
     "link": "https://www.google.com/"
   },
   {

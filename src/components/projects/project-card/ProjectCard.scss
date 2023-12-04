@@ -8,6 +8,7 @@
   animation: 1s ease 0s 1 normal none running fadeInUp;
   outline: 2px solid rgb(187, 187, 187);
   border-radius: 15px;
+  transition: opacity 150ms ease-in-out 0s, transform 150ms ease-in-out 0s;
 
 
   .card-image {
@@ -16,7 +17,6 @@
     object-fit: cover;
     position: absolute;
     z-index: -10;
-
   }
   .card-description {
     align-self: flex-end;
@@ -25,6 +25,9 @@
     padding: 1rem 1.5rem;
     margin-top: auto;
     gap: 0.5rem;
+    transform: translateY(0%);
+    transition: opacity 150ms ease-in-out 0s, transform 150ms ease-in-out 0s;
+
     h2 {
       font-size: 2rem;
       text-transform: capitalize;
@@ -35,19 +38,28 @@
     }
   }
 }
-//
+.tools {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  gap: 1rem;
+}
+.tool {
+  background: white;
+  color: black;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
 
 .project-card:hover::before {
-    content: "";
-    background: linear-gradient(to bottom, transparent 0%, black 100%);
-    position: absolute;
-    inset: 0;
-    opacity: 0.8;
-    border-radius: 15px;
-
-
-
-  }
+  content: "";
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+  position: absolute;
+  inset: 0;
+  opacity: 0.8;
+  border-radius: 15px;
+}
 .project-card:hover .card-description {
   opacity: 1;
   transform: translateY(-10%);

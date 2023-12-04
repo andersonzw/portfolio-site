@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
         <p className="body-text">{description}</p>
         <div className="tools">
           {tools.map((tool, i) => (
-            <span key={i}>{tool}</span>
+            <div className="tool" key={i}>{tool}</div>
           ))}
         </div>
       </div>
