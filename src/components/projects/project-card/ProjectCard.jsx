@@ -3,6 +3,7 @@ import "./ProjectCard.scss";
 const ProjectCard = ({ project }) => {
   const { projectName, image, description, tools, link } = project;
   return (
+
     <div className="project-card">
       <img className="card-image" src={image} alt="" />
       <div className="flexColStart card-description">
@@ -15,6 +16,7 @@ const ProjectCard = ({ project }) => {
         </div>
       </div>
     </div>
+
   );
 };
 

@@ -1,14 +1,21 @@
 @use "../../utils/theme";
 
 .projects-section {
-    min-height: calc(100vh);
+  min-height: calc(100vh);
 }
 
 .projects-container {
-    gap: 2rem;
+  gap: 2rem;
+  .header-section {
+    flex-direction: row-reverse;
+  }
 }
 
-.project-list-container{
-    flex-wrap: wrap;
-    justify-content: space-around;
+.project-list-container {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-list-container > * {
+    border-radius: 20px;
 }

@@ -1,17 +1,16 @@
 @use "../../utils/theme";
 .hero-container {
-  min-height: calc(100vh - 100px);
+  min-height: calc(120vh);
   margin: auto;
   flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 0;
-  padding-bottom: 10%;
+  padding-bottom: 30vh;
 
 }
 .hero-image-div {
   height: 315px;
   width: 315px;
-  transform: rotate(-3deg);
   .hero-image {
     height: 100%;
     width: 100%;
