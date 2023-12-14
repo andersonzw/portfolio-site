@@ -1,0 +1,47 @@
+/** SCSS DARK THEME PRIMARY COLORS **/
+$primary-100: #f25a0f;
+$primary-200: #f86f30;
+$primary-300: #fd824a;
+$primary-400: #ff9563;
+$primary-500: #ffa77c;
+$primary-600: #ffb995;
+
+/** SCSS DARK THEME SURFACE COLORS */
+$surface-100: #121212;
+$surface-200: #282828;
+$surface-300: #3f3f3f;
+$surface-400: #575757;
+$surface-500: #717171;
+$surface-600: #8b8b8b;
+
+/** SCSS DARK THEME MIXED SURFACE COLORS */
+$surface-mixed-100: #271a14;
+$surface-mixed-200: #3c2f29;
+$surface-mixed-300: #524540;
+$surface-mixed-400: #685d58;
+$surface-mixed-500: #807672;
+$surface-mixed-600: #98908c;
+
+// /** SCSS DARK THEME PRIMARY COLORS */
+// $primary-100: #3521eb;
+// $primary-200: #5c3cee;
+// $primary-300: #7854f1;
+// $primary-400: #906cf4;
+// $primary-500: #a583f7;
+// $primary-600: #b99cf9; /** SCSS DARK THEME SURFACE COLORS */
+// $surface-100: #121212;
+// $surface-200: #282828;
+// $surface-300: #3f3f3f;
+// $surface-400: #575757;
+// $surface-500: #717171;
+// $surface-600: #8b8b8b; /** SCSS DARK THEME MIXED SURFACE COLORS */
+// $surface-mixed-100: #1a1525;
+// $surface-mixed-200: #2f2a3a;
+// $surface-mixed-300: #46414f;
+// $surface-mixed-400: #5e5966;
+// $surface-mixed-500: #76727e;
+// $surface-mixed-600: #908d96; /** EXAMPLES */
+
+:export {
+  scroll: $primary-200;
+}

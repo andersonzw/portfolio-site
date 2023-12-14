@@ -14,12 +14,12 @@ export const ScrollReveal = ({ children, width = "fit-content" }) => {
     <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 200 },
+          hidden: { opacity: 0, y: 500 },
           visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, ease:"easeOut" }}
+        transition={{ duration: 0.8, ease:"easeOut" }}
       >
         {children}
       </motion.div>

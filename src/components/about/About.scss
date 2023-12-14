@@ -1,4 +1,4 @@
-@use "../../utils/theme";
+@use "../../utils/theme.module";
 .about-section {
   // background: theme.$surface-200;
   min-height: calc(100vh);

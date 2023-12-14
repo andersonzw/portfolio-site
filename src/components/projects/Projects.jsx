@@ -8,26 +8,25 @@ const Projects = () => {
   return (
     <section className="projects-section">
       <div className="innerWidth paddings flexColCenter projects-container">
-
-          <div className="header-section">
-            <h1 className="section-title">
-              <Reveal>
-                Projects
-                <div className="separator" />
-              </Reveal>
-            </h1>
-            <div className="header-line"/>
-          </div>
+        <div className="header-section">
+          <h1 className="section-title">
+            <Reveal>
+              Projects
+              <div className="separator" />
+            </Reveal>
+          </h1>
+          <div className="header-line" />
+        </div>
 
         <Reveal>
           <h2 className="subheading">
             These are some example projects I have worked on
           </h2>
         </Reveal>
-        <div className="flexCenter project-list-container">
+        <div className="project-list-container">
           {projectList.map((project, i) => (
-            <ScrollReveal>
-              <ProjectCard key={i} project={project} />
+            <ScrollReveal key={i}>
+              <ProjectCard project={project} />
             </ScrollReveal>
           ))}
         </div>

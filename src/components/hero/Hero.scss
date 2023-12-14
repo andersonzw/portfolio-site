@@ -1,4 +1,4 @@
-@use "../../utils/theme";
+@use "../../utils/theme.module";
 .hero-container {
   min-height: calc(120vh);
   margin: auto;
@@ -22,7 +22,6 @@
 }
 
 .hero-description {
-color: theme.$primary-300;
   max-width: 50%;
   gap: 0.3rem;
 

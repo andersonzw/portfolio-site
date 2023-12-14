@@ -1,7 +1,15 @@
-@use "./utils/theme";
+@use "./utils/theme.module";
 body {
   background-color: theme.$surface-100;
   color: #ffff;
+}
+::selection {
+  background: theme.$primary-200;
+  color: rgb(0, 0, 0);
+
+}
+.coloured {
+  color:theme.$primary-300;;
 }
 
 * {
@@ -66,8 +74,9 @@ a {
   text-align: center;
 }
 
-.secondaryText {
-  font-size: 0.9rem;
+.medium-text {
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 .orangeText {
   font-size: 1.5rem;
@@ -82,7 +91,7 @@ a {
 }
 .section-title {
   color: white;
-  font-size: 5.1rem;
+  font-size: 3.4rem;
   text-align: center;
 }
 .header-section {
@@ -100,8 +109,19 @@ a {
   flex: 1;
 }
 
+
+
+// --text-xs: 1.6rem;
+// --text-sm: 1.8rem;
+// --text-md: 2.2rem;
+// --text-lg: 3.6rem;
+// --text-xl: 5.6rem;
+// --text-2xl: 9.6rem;
+
+
+
 /* media queries */
-@media (min-width: 1536px) {
+@media (min-width: 1236px) {
   .innerWidth {
     max-width: 1280px;
     margin: auto;

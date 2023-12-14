@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
-export const Reveal = ({ children, width = "fit-content" }) => {
+import colors from "../_theme.module.scss"
+export const Reveal = ({ children, width = "fit-content", className}) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -12,7 +13,7 @@ export const Reveal = ({ children, width = "fit-content" }) => {
     }
   }, [isInView]);
   return (
-    <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
+    <div ref={ref} style={{position: "relative", width, overflow: "hidden"}} className={className}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 200 },
@@ -35,7 +36,7 @@ export const Reveal = ({ children, width = "fit-content" }) => {
             bottom:4,
             left:0,
             right:0,
-            background:"#f25a0f",
+            backgroundColor:`${colors.scroll}`,
             zIndex:20
         }}
       ></motion.div>

@@ -1,21 +1,21 @@
-@use "../../utils/theme";
+@use "../../utils/theme.module";
 
 .projects-section {
   min-height: calc(100vh);
 }
 
 .projects-container {
-  gap: 2rem;
+  gap: 3rem;
   .header-section {
     flex-direction: row-reverse;
   }
 }
 
 .project-list-container {
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.project-list-container > * {
-    border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  row-gap: 4rem;
+  width: 100%;
+  padding: 1.5rem;
 }
