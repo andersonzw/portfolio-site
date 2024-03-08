@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+svg{
+    width: 100%;
+    margin:   auto;
+    height: 100vh;
+}
+text {
+  color: white;
+  margin: auto;
+  text-align: center;
+  font-size: 200px;
+}
+.text-fill {
+  fill: none;
+  stroke: rgb(126, 103, 255);
+  stroke-width: 1;
+  stroke-dasharray: 550;
+  stroke-dashoffset: 550;
+  animation: fillAnimation 3s ease-out forwards, fadeOutAnimation 2s 2s ease forwards;
+}
+
+@keyframes fillAnimation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

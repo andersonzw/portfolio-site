@@ -19,12 +19,7 @@ const About = () => {
         </div>
         <Reveal>
           <p className="primary-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in
-            commodo odio. Etiam lobortis congue nulla a maximus. Cras urna
-            sapien, faucibus in lorem in, dignissim sagittis lacus. Donec quis
-            suscipit nisi. Praesent dignissim feugiat mauris quis aliquet.
-            Vestibulum et iaculis dolor. Nulla dictum purus elit, eu semper
-            lorem rhoncus eu.
+            Hi! I'm Anderson,  a Data Scientist by day and self-taught React developer by night. I specialize in creating responsive web applications, blending my data analysis expertise with my love for web development.
           </p>
         </Reveal>
         <Reveal>

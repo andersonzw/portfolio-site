@@ -1,26 +1,26 @@
 [
   {
-    "company": "Google",
-    "jobTitle": "Software engineer",
+    "company": "Australia Bureau of Statistics",
+    "jobTitle": "Data Scientist",
     "jobDate": "2022-Present",
     "jobCity": "Melbourne",
-    "jobDescription": "Donec tempor augue id orci finibus, in accumsan mauris molestie. Integer tellus nisi, gravida a velit consequat, consectetur aliquam nisl. Morbi dui enim, aliquet sed posuere vitae, ultrices non sem. ",
-    "jobSkills": ["Tool1", "Tool2", "Tool3", "Tool4"]
+    "jobDescription": "Project lead in  employing advanced statistical methods and analysis to drive insights and inform business strategy, while managing data science projects from inception to delivery.",
+    "jobSkills": ["Python", "SAS", "R"]
   },
   {
-    "company": "Self employed",
-    "jobTitle": "Software engineer",
-    "jobDate": "2022-Present",
+    "company": "Freelancer",
+    "jobTitle": "React Developer",
+    "jobDate": "2023-Present",
     "jobCity": "Melbourne",
-    "jobDescription": "Donec tempor augue id orci finibus, in accumsan mauris molestie. Integer tellus nisi, gravida a velit consequat, consectetur aliquam nisl. Morbi dui enim, aliquet sed posuere vitae, ultrices non sem. ",
-    "jobSkills": ["Tool1", "Tool2", "Tool3", "Tool4"]
+    "jobDescription": "Self-taught React developer with high capability in front-end development, equipped to create interactive and user-friendly web applications. Mastery of React's ecosystem, including state management, hooks, and the component lifecycle, achieved through self-study.",
+    "jobSkills": ["Javascript", "CSS", "HTML", "React"]
   },
   {
-    "company": "University",
-    "jobTitle": "Software engineer",
-    "jobDate": "2022-Present",
+    "company": "University of Melbourne",
+    "jobTitle": "Economics and Finance",
+    "jobDate": "2018-2022",
     "jobCity": "Melbourne",
-    "jobDescription": "Donec tempor augue id orci finibus, in accumsan mauris molestie. Integer tellus nisi, gravida a velit consequat, consectetur aliquam nisl. Morbi dui enim, aliquet sed posuere vitae, ultrices non sem. ",
-    "jobSkills": ["Tool1", "Tool2", "Tool3", "Tool4"]
+    "jobDescription": "Completed Bachelor's of Commerce majoring in Economics and Finance ",
+    "jobSkills": []
   }
 ]

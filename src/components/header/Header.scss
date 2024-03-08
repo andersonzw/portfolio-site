@@ -10,6 +10,7 @@
   left: 0;
   backdrop-filter: blur(7px);
   z-index: 100;
+  animation: 1.5s ease 0s 1 normal none running fadeInDown;
 }
 
 .header-logo {
@@ -23,3 +24,4 @@
 .header-navigator {
   gap: 5rem;
 }
+
