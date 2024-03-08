@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+src/utils/project_list.json
+src/utils/experience.json
+src/utils/other_skills.json
+src/utils/skills.json

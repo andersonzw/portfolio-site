@@ -1,37 +1,34 @@
 [
   {
-    "projectName": "project",
+    "projectName": "Commission Manager",
     "image": "/assets/placeholder-proj.jpeg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies interdum elit. ",
-    "tools": ["Javascript", "React", "Redux", "Verylongword"],
+    "description": "A dashboard tailored for artists, streamlining the management of commissions and requests. Utilizes Firebase for secure authentication, along with its database and storage solutions to efficiently organize collections and data.",
+    "tools": ["React", "Redux", "Firebase"],
     "link": "https://www.google.com/",
     "githubLink": "https://www.github.com/"
-
   },
   {
-    "projectName": "project1",
+    "projectName": "E-Commerce",
     "image": "/assets/placeholder-proj.jpeg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies interdum elit. Ut ve",
-    "tools": ["tool1", "tool2", "tool3", "tool4"],
+    "description": "A modern e-commerce platform for clothing, developed with React and Redux, featuring a fully integrated payment system via Stripe API for secure and seamless transactions.",
+    "tools": ["Typescript", "React", "Redux", "Firebase", "Swipe"],
     "link": "https://www.google.com/",
     "githubLink": "https://www.github.com/"
-
   },
   {
-    "projectName": "project2",
+    "projectName": "Milkbot",
     "image": "/assets/placeholder-proj.jpeg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies interdum elit. Ut vehicula odio vel nibh suscipit, ullamcorper sollicitudin sa.",
-    "tools": ["tool1", "tool2", "tool3", "tool4"],
+    "description": "A multipurpose discord bot built using Javascript and Node.js. Contains commands such as music streams, playlist creation, server moderation, server games, catering to a wide array of server functionalities and entertainment needs.",
+    "tools": ["Javascript", "Node.js", "Discord.js"],
     "link": "https://www.google.com/",
     "githubLink": "https://www.github.com/"
-
   },
   {
-    "projectName": "project3",
+    "projectName": "Asteroid Game",
     "image": "/assets/placeholder-proj.jpeg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies interdum elit. Ut vehicula odio vel nibh suscipit, ullamcorper sollicitudin sapien ornare. Aliquam lobortis magna diam, eu faucibus sapien imperdiet sit amet.",
-    "tools": ["tool1", "tool2", "tool3", "tool4"],
-    "link": "https://www.google.com/", 
+    "description": "A classic asteroid game built using HTML canvas element and vanilla Javascript ",
+    "tools": ["HTML", "Javascript"],
+    "link": "https://www.google.com/",
     "githubLink": "https://www.github.com/"
   }
 ]

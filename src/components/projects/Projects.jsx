@@ -25,7 +25,7 @@ const Projects = () => {
         </Reveal>
         <div className="project-list-container">
           {projectList.map((project, i) => (
-            <ScrollReveal key={i}>
+            <ScrollReveal key={i} width= {'100%'}>
               <ProjectCard project={project} />
             </ScrollReveal>
           ))}
