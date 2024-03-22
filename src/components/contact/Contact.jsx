@@ -1,6 +1,7 @@
 import React from "react";
 import Reveal from "../../utils/animation-components/Reveal";
 import "./Contact.scss";
+import ScrollReveal from "../../utils/animation-components/ScrollReveal"
 const Contact = () => {
   return (
     <section className="contact-section">
@@ -13,10 +14,12 @@ const Contact = () => {
             </h1>
           </Reveal>
         </div>
-        <div className="email-container">
+        <ScrollReveal>
+          <div className="email-container">
             <img src="/assets/mail-send-svgrepo-com.svg" alt="" />
             <p>anderson.zw.yang@gmail.com</p>
-        </div>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

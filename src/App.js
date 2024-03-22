@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 import Contact from "./components/contact/Contact";
 
 function App() {
-  const [loadPage, setLoadPage] = useState(false);
+  const [loadPage, setLoadPage] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
   useEffect(() => {
     const animationTimer = setTimeout(() => {
