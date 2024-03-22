@@ -13,8 +13,8 @@ const Hero = () => {
           <h1 className="section-title">Front-End React Developer</h1>
           <TypeReveal>
             <p className="coloured secondary-text">
-              I'm Anderson, a Data Scientist by day and self-taught React
-              developer by night based in Melbourne.
+              I'm Anderson, a Data Scientist by day 🌅 and self-taught React
+              developer by night 🌙 based in Melbourne.
             </p>
           </TypeReveal>
         </div>

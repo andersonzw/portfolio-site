@@ -11,7 +11,7 @@ const About = () => {
         <div className="header-section">
           <h1 className="section-title">
             <Reveal>
-              About Me
+              Tech Stack
               <div className="separator" />
             </Reveal>
           </h1>

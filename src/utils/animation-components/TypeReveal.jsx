@@ -19,13 +19,19 @@ function CursorBlinker() {
     <motion.div
       variants={cursorVariants}
       animate="blinking"
-      className="inline-block h-5 w-[1px] translate-y-1 bg-slate-900"
+      style={{
+        display: "inline-block",
+        height: "20px", // Equivalent to h-5 in Tailwind CSS
+        width: "1px",
+        transform: "translateY(0.25rem)", // Adjust based on your design needs
+      }}
+      className="coloured-cursor"
     />
   );
 }
 
-export default function TextAnim({children}) {
-    console.log(children.props.children);
+export default function TextAnim({ children }) {
+  console.log(children.props.children);
   const baseText = children.props.children;
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));
@@ -36,7 +42,7 @@ export default function TextAnim({children}) {
   useEffect(() => {
     const controls = animate(count, baseText.length, {
       type: "tween",
-      duration: 2.5,
+      duration: 3,
       ease: "easeInOut",
     });
     return controls.stop;

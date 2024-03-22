@@ -8,6 +8,7 @@ import "./App.scss";
 import Arrow from "./components/arrow/Arrow";
 import Loader from "./components/loader/Loader";
 import { useEffect, useState } from "react";
+import Contact from "./components/contact/Contact";
 
 function App() {
   const [loadPage, setLoadPage] = useState(false);
@@ -32,6 +33,7 @@ function App() {
           <About />
           <Projects />
           <Experience />
+          <Contact />
         </div>
       )}
     </>

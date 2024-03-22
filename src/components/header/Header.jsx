@@ -7,6 +7,7 @@ const Header = () => {
       <div className="flexCenter header-navigator">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
       <div className="header-github-btn">
         <img

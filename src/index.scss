@@ -10,6 +10,9 @@ body {
 .coloured {
   color: theme.$primary-300;
 }
+.coloured-cursor {
+  background-color: theme.$primary-300;
+}
 
 * {
   margin: 0;

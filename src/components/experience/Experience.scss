@@ -1,9 +1,14 @@
 @use "../../utils/theme.module";
 
 .experience-section {
-    min-height: 100vh;
+    min-height: 90vh;
 }
 .experience-list-container {
     width: 90%;
     padding: 1.5rem;
+
+}
+
+.experience-container {
+        gap: 2rem;
 }

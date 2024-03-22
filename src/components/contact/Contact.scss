@@ -1,0 +1,48 @@
+@use "../../utils/theme.module";
+.contact-section {
+  min-height: 50vh;
+}
+
+.contact-container {
+  padding-top: 0;
+  .section-title {
+    text-align: center;
+    margin-top: 0;
+    scale: 80%;
+  }
+  .email-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.384);
+    border-radius: 30px;
+    cursor: pointer;
+    height: 100px;
+    padding: 1rem 2rem;
+    img {
+      height: 40px;
+    }
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+  }
+
+  .email-container:hover {
+    border: 1px solid theme.$primary-100;
+    background-color: theme.$primary-200;
+  }
+  .email-container:active {
+    transform: scale(0.98);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+@media (max-width: 480px) {
+  .contact-container {
+    .email-container {
+      padding: 0.4rem;
+    }
+  }
+}
