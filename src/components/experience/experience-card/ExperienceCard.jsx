@@ -11,7 +11,7 @@ const ExperienceCard = ({ experience }) => {
           <span>{company}</span>
         </Reveal>
         <Reveal>
-          <span>{jobDate}</span>
+          <span className="desktop-680px">{jobDate}</span>
         </Reveal>
       </div>
       <div className="card-subheader">
@@ -19,13 +19,13 @@ const ExperienceCard = ({ experience }) => {
           <span className="coloured">{jobTitle}</span>
         </Reveal>
         <Reveal>
-          <span>{jobCity}</span>
+          <span className="desktop-680px">{jobCity}</span>
         </Reveal>
       </div>
 
       <div className="card-description">
         <Reveal>
-          <span>{jobDescription}</span>
+          <span className="desktop-680px">{jobDescription}</span>
         </Reveal>
       </div>
       <Reveal>
@@ -36,7 +36,7 @@ const ExperienceCard = ({ experience }) => {
         </div>
       </Reveal>
 
-      <div className="card-separator"/>
+      <div className="card-separator" />
     </div>
   );
 };

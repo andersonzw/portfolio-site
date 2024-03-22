@@ -55,3 +55,9 @@
     background: white;
     opacity: 0.1;
 }
+
+@media (max-width: 680px) {
+    .desktop-680px {
+        display: none;
+    }
+}

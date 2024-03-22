@@ -1,7 +1,7 @@
 @use "../../utils/theme.module";
 .about-section {
   // background: theme.$surface-200;
-  min-height: calc(120vh);
+  min-height: calc(100vh);
 }
 .about-container {
   gap: 2rem;

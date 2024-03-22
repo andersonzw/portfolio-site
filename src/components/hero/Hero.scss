@@ -21,12 +21,17 @@
   margin-top: -200px;
 
   .hero-description {
-    max-width: 50%;
+    max-width: 500px;
     gap: 0.3rem;
 
     h1 {
       margin: 0;
     }
+  }
+  .secondary-text {
+    text-align: center;
+    padding: 0 2rem 0 2rem;
+    line-height: 1.8;
   }
 }
 
