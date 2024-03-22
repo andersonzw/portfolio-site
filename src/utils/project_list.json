@@ -2,7 +2,7 @@
   {
     "projectName": "Commission Manager",
     "image": "/assets/placeholder-proj.jpeg",
-    "description": "A dashboard tailored for artists, streamlining the management of commissions and requests. Utilizes Firebase for secure authentication, along with its database and storage solutions to efficiently organize collections and data.",
+    "description": "A dashboard tailored for artists, streamlining the management of commissions and requests. ",
     "tools": ["React", "Redux", "Firebase"],
     "link": "https://www.google.com/",
     "githubLink": "https://www.github.com/"
@@ -10,7 +10,7 @@
   {
     "projectName": "E-Commerce",
     "image": "/assets/placeholder-proj.jpeg",
-    "description": "A modern e-commerce platform for clothing, developed with React and Redux, featuring a fully integrated payment system via Stripe API for secure and seamless transactions.",
+    "description": "A modern e-commerce platform for clothing featuring a fully integrated payment system via Stripe API",
     "tools": ["Typescript", "React", "Redux", "Firebase", "Swipe"],
     "link": "https://www.google.com/",
     "githubLink": "https://www.github.com/"
@@ -18,15 +18,16 @@
   {
     "projectName": "Milkbot",
     "image": "/assets/placeholder-proj.jpeg",
-    "description": "A multipurpose discord bot built using Javascript and Node.js. Contains commands such as music streams, playlist creation, server moderation, server games, catering to a wide array of server functionalities and entertainment needs.",
+    "description": "A multipurpose discord bot built using Javascript and Node.js.",
     "tools": ["Javascript", "Node.js", "Discord.js"],
     "link": "https://www.google.com/",
     "githubLink": "https://www.github.com/"
   },
+
   {
-    "projectName": "Asteroid Game",
+    "projectName": "Custom Extensions",
     "image": "/assets/placeholder-proj.jpeg",
-    "description": "A classic asteroid game built using HTML canvas element and vanilla Javascript ",
+    "description": "Quality of life chrome extensions",
     "tools": ["HTML", "Javascript"],
     "link": "https://www.google.com/",
     "githubLink": "https://www.github.com/"

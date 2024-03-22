@@ -10,7 +10,7 @@ import Loader from "./components/loader/Loader";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [loadPage, setLoadPage] = useState(true);
+  const [loadPage, setLoadPage] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
   useEffect(() => {
     const animationTimer = setTimeout(() => {

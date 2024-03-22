@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 .loader {
   position: absolute;
@@ -7,10 +7,10 @@
   transform: translate(-50%, -50%);
   width: 100%;
 }
-svg{
-    width: 100%;
-    margin:   auto;
-    height: 100vh;
+svg {
+  width: 100%;
+  margin: auto;
+  height: 100vh;
 }
 text {
   color: white;
@@ -22,9 +22,10 @@ text {
   fill: none;
   stroke: rgb(126, 103, 255);
   stroke-width: 1;
-  stroke-dasharray: 550;
-  stroke-dashoffset: 550;
-  animation: fillAnimation 3s ease-out forwards, fadeOutAnimation 2s 2s ease forwards;
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
+  animation: fillAnimation 3s ease-out forwards,
+    fadeOutAnimation 2s 2s ease forwards;
 }
 
 @keyframes fillAnimation {

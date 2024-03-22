@@ -1,8 +1,7 @@
 @use "../../utils/theme.module";
 .about-section {
   // background: theme.$surface-200;
-  min-height: calc(100vh);
-  
+  min-height: calc(120vh);
 }
 .about-container {
   gap: 2rem;
@@ -14,5 +13,26 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  .skill-card {
+    width: 200px;
+    gap: 0.6rem;
+  }
+  .skill-svg {
+    height: 60px;
+    width: 60px;
+  }
 }
 
+@media (max-width: 480px) {
+  .skills-container {
+    gap: 1rem;
+    .skill-card {
+      width: 100px;
+      gap: 0.6rem;
+    }
+    .skill-svg {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}

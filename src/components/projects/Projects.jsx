@@ -6,7 +6,7 @@ import ScrollReveal from "../../utils/animation-components/ScrollReveal";
 import Reveal from "../../utils/animation-components/Reveal";
 const Projects = () => {
   return (
-    <section className="projects-section">
+    <section id="projects" className="projects-section">
       <div className="innerWidth paddings flexColCenter projects-container">
         <div className="header-section">
           <h1 className="section-title">
@@ -19,9 +19,9 @@ const Projects = () => {
         </div>
 
         <Reveal>
-          <h2 className="subheading">
+          <p className="primary-text">
             These are some example projects I have worked on
-          </h2>
+          </p>
         </Reveal>
         <div className="project-list-container">
           {projectList.map((project, i) => (

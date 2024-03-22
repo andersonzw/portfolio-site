@@ -6,7 +6,7 @@ import SkillCard from "./skill-card/SkillCard";
 import Reveal from "../../utils/animation-components/Reveal";
 const About = () => {
   return (
-    <section className="about-section">
+    <section id ="about" className="about-section">
       <div className="flexColCenter paddings innerWidth about-container">
         <div className="header-section">
           <h1 className="section-title">

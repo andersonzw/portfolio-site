@@ -25,3 +25,21 @@
   gap: 5rem;
 }
 
+.header-menu-btn{
+  display:none;
+}
+
+@media (max-width: 870px) {
+  .header-logo {
+    height: 40px;
+    width: 40px;
+  }
+  .header-menu-btn {
+    display: block;
+
+  }
+  .header-navigator, .header-github-btn {
+    display: none;
+  }
+  
+}

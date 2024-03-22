@@ -1,5 +1,4 @@
 import React from "react";
-import "./SkillCard.scss";
 const SkillCard = ({ skill }) => {
   const { svg, tool } = skill;
   return (

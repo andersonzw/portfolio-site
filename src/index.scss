@@ -108,6 +108,9 @@ a {
   flex: 1;
 }
 
+h2 {
+  font-size: clamp(0.7rem, calc(1rem + 1.2vw), 1.5rem);
+}
 // --text-xs: 1.6rem;
 // --text-sm: 1.8rem;
 // --text-md: 2.2rem;
@@ -123,9 +126,21 @@ a {
   }
 }
 
-@media (min-width: 710px) {
+@media (min-width: 870px) {
   .paddings {
     padding: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: calc(2.4rem + 1.5vw); /* Adjust size for tablets and below */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-title {
+    font-size: calc(2rem + 2vw); /* Adjust size for small devices */
   }
 }
 @keyframes fadeInUp {
@@ -185,11 +200,9 @@ a {
 @keyframes fadeIn {
   from {
     opacity: 0;
-
   }
 
   to {
     opacity: 1;
-
   }
 }
