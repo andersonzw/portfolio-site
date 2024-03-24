@@ -9,9 +9,10 @@ import Arrow from "./components/arrow/Arrow";
 import Loader from "./components/loader/Loader";
 import { useEffect, useState } from "react";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
-  const [loadPage, setLoadPage] = useState(true);
+  const [loadPage, setLoadPage] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
   useEffect(() => {
     const animationTimer = setTimeout(() => {
@@ -34,6 +35,7 @@ function App() {
           <Projects />
           <Experience />
           <Contact />
+          <Footer/>
         </div>
       )}
     </>

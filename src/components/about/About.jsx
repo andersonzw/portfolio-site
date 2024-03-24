@@ -23,7 +23,7 @@ const About = () => {
           </p>
         </Reveal>
         <Reveal>
-          <h2>Frontend Skills</h2>
+          <h2>Front-End</h2>
         </Reveal>
         <div className="skills-container">
           {skills.map((skill, i) => {
@@ -35,7 +35,7 @@ const About = () => {
           })}
         </div>
         <Reveal>
-          <h2>Other Skills</h2>
+          <h2>Data Science</h2>
         </Reveal>
         <div className="skills-container">
           {otherSkills.map((skill, i) => {

@@ -7,12 +7,12 @@ const Contact = () => {
     <section className="contact-section">
       <div className="innerWidth paddings flexColCenter contact-container">
         <div className="flexColCenter header-section">
-          <Reveal>
+          <ScrollReveal>
             <h1 className="section-title">
               Contact
               <div className="separator" />
             </h1>
-          </Reveal>
+          </ScrollReveal>
         </div>
         <ScrollReveal>
           <div className="email-container">
