@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Projects.scss";
 import projectList from "../../utils/project_list.json";
 import ProjectCard from "./project-card/ProjectCard";
 import ScrollReveal from "../../utils/animation-components/ScrollReveal";
 import Reveal from "../../utils/animation-components/Reveal";
+import { ScrollContext } from "../../utils/context/scroll-context";
 const Projects = () => {
+  const { projectRef } = useContext(ScrollContext);
+
   return (
-    <section id="projects" className="projects-section">
+    <section ref={projectRef} id="projects" className="projects-section">
       <div className="innerWidth paddings flexColCenter projects-container">
         <div className="header-section">
           <h1 className="section-title">
@@ -25,7 +28,7 @@ const Projects = () => {
         </Reveal>
         <div className="project-list-container">
           {projectList.map((project, i) => (
-            <ScrollReveal key={i} width= {'100%'}>
+            <ScrollReveal key={i} width={"100%"}>
               <ProjectCard project={project} />
             </ScrollReveal>
           ))}

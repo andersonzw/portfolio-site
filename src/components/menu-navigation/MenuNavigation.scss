@@ -1,0 +1,41 @@
+@use "../../utils/theme.module";
+
+.menu-navigation-container {
+  min-height: 100vh;
+  min-width: 100%;
+  background-color: rgba(theme.$surface-100, 0.5);
+  backdrop-filter: blur(10px);
+
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  .close-button {
+    position: fixed;
+    top: 1rem;
+    right: 1.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    fill: white;
+    svg {
+      height: 42px;
+      fill: white;
+    }
+  }
+
+  .navigation-links {
+    ul {
+      font-size: clamp(0.7rem, calc(1rem + 1.2vw), 1.5rem);
+      margin-bottom: 2rem;
+      text-align: center;
+      font-weight: 600;
+      cursor: pointer;
+
+    }
+    ul:hover {
+      color: theme.$primary-100;
+    }
+  }
+}

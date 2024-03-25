@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.scss";
 import TypeReveal from "../../utils/animation-components/TypeReveal";
+import Arrow from "../arrow/Arrow";
 
 const Hero = () => {
   return (
@@ -19,6 +20,7 @@ const Hero = () => {
           </TypeReveal>
         </div>
       </div>
+      <Arrow/>
     </section>
   );
 };

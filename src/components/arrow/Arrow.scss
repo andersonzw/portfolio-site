@@ -3,11 +3,10 @@
     height: 72px;
     left: 50%;
     margin: auto;
-    margin-top: -400px;
-    margin-bottom: 400px;
-    bottom: 200px;
+    bottom: 7rem;
     scale: 60%;
-    display: block;
+    transform: translate(-50%, 0) ;
+    position: absolute;
     text-align: center;
     animation: 5s ease 0s 1 normal none running fadeIn;
   }

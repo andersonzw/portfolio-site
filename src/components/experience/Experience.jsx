@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import experienceData from "../../utils/experience.json";
 import ExperienceCard from "./experience-card/ExperienceCard";
 import "./Experience.scss";
 import { Reveal } from "../../utils/animation-components/Reveal";
+import { ScrollContext } from "../../utils/context/scroll-context";
 const Experience = () => {
+  const { experienceRef } = useContext(ScrollContext);
   return (
-    <section className="experience-section">
+    <section ref={experienceRef} className="experience-section">
       <div className="innerWidth paddings flexColCenter experience-container">
         <div className="header-section">
           <Reveal>

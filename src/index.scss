@@ -21,6 +21,11 @@ body {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
+
+img,
+svg {
+  user-select: none;
+}
 a {
   color: inherit;
   text-decoration: none;

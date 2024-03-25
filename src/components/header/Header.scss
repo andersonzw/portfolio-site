@@ -11,6 +11,14 @@
   backdrop-filter: blur(7px);
   z-index: 100;
   animation: 1.5s ease 0s 1 normal none running fadeInDown;
+  p {
+    cursor: pointer;
+    line-height: 5;
+    user-select: none;
+  }
+  p:hover {
+    color: theme.$primary-100;
+  }
 }
 
 .header-logo {
@@ -25,8 +33,10 @@
   gap: 5rem;
 }
 
-.header-menu-btn{
-  display:none;
+.header-menu-btn {
+  display: none;
+  cursor: pointer;
+  user-select: none;
 }
 
 @media (max-width: 870px) {
@@ -36,10 +46,9 @@
   }
   .header-menu-btn {
     display: block;
-
   }
-  .header-navigator, .header-github-btn {
+  .header-navigator,
+  .header-github-btn {
     display: none;
   }
-  
 }

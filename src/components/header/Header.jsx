@@ -1,26 +1,35 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Header.scss";
+import { MenuContext } from "../../utils/context/menu-context";
+import { ScrollContext } from "../../utils/context/scroll-context";
 const Header = () => {
+  const { openNavigatorMenu } = useContext(MenuContext);
+  const { aboutRef, projectRef, contactRef, experienceRef, scrollToRef } =
+    useContext(ScrollContext);
   return (
     <header className="paddings flexCenter header-container">
       <div className="flexCenter header-logo">AY</div>
       <div className="flexCenter header-navigator">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        {/* <p onClick={() => scrollToRef(aboutRef)}>About</p> */}
+        <p onClick={() => scrollToRef(projectRef)}>Projects</p>
+        <p onClick={() => scrollToRef(experienceRef)}>Experiences</p>
+        <p onClick={() => scrollToRef(contactRef)}>Contact</p>
       </div>
       <div className="header-github-btn">
         <img
-          style={{ height: 32}}
+          style={{ height: 32 }}
           src="/assets/github-142-svgrepo-com (2).svg"
           alt="github icon"
         />
       </div>
-      <div className="header-menu-btn">
+      <div className="header-menu-btn" unselectable>
         <img
-          style={{ height: 32}}
+          style={{ height: 32 }}
           src="/assets/menu-svgrepo-com.svg"
           alt="github icon"
+          onClick={() => {
+            openNavigatorMenu();
+          }}
         />
       </div>
     </header>

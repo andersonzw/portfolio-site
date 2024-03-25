@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext, useRef } from "react";
 import "./About.scss";
 import skills from "../../utils/skills.json";
 import otherSkills from "../../utils/other_skills.json";
 import SkillCard from "./skill-card/SkillCard";
 import Reveal from "../../utils/animation-components/Reveal";
+import { ScrollContext } from "../../utils/context/scroll-context";
 const About = () => {
+  const {aboutRef} = useContext(ScrollContext)
   return (
-    <section id ="about" className="about-section">
+    <section ref = {aboutRef} id ="about" className="about-section">
       <div className="flexColCenter paddings innerWidth about-container">
         <div className="header-section">
           <h1 className="section-title">

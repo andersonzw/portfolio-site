@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import Reveal from "../../utils/animation-components/Reveal";
 import "./Contact.scss";
-import ScrollReveal from "../../utils/animation-components/ScrollReveal"
+import ScrollReveal from "../../utils/animation-components/ScrollReveal";
+import { ScrollContext } from "../../utils/context/scroll-context";
 const Contact = () => {
+  const { contactRef } = useContext(ScrollContext);
   return (
-    <section className="contact-section">
+    <section ref={contactRef} className="contact-section">
       <div className="innerWidth paddings flexColCenter contact-container">
         <div className="flexColCenter header-section">
           <ScrollReveal>

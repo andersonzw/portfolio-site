@@ -10,6 +10,7 @@ import Loader from "./components/loader/Loader";
 import { useEffect, useState } from "react";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import MenuNavigation from "./components/menu-navigation/MenuNavigation";
 
 function App() {
   const [loadPage, setLoadPage] = useState(false);
@@ -28,9 +29,9 @@ function App() {
         <Loader className={`${fadeOut ? "fade-out" : ""}`} />
       ) : (
         <div className="App">
+          <MenuNavigation/>
           <Header />
           <Hero />
-          <Arrow />
           <About />
           <Projects />
           <Experience />
