@@ -4,7 +4,7 @@ import { MenuContext } from "../../utils/context/menu-context";
 import { ScrollContext } from "../../utils/context/scroll-context";
 const Header = () => {
   const { openNavigatorMenu } = useContext(MenuContext);
-  const { aboutRef, projectRef, contactRef, experienceRef, scrollToRef } =
+  const {projectRef, contactRef, experienceRef, scrollToRef } =
     useContext(ScrollContext);
   return (
     <header className="paddings flexCenter header-container">

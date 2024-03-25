@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext } from "react";
 import "./About.scss";
 import skills from "../../utils/skills.json";
 import otherSkills from "../../utils/other_skills.json";

@@ -5,7 +5,7 @@ import { ScrollContext } from "../../utils/context/scroll-context";
 import { SlidingMenu } from "../../utils/animation-components/SlidingMenu";
 
 const MenuNavigation = () => {
-  const { openMenu, closeNavigatorMenu } = useContext(MenuContext);
+  const { closeNavigatorMenu } = useContext(MenuContext);
   const { aboutRef, projectRef, contactRef, experienceRef, scrollToRef } =
     useContext(ScrollContext);
   const scrollAndClose = (ref) => {

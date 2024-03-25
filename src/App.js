@@ -5,7 +5,6 @@ import Hero from "./components/hero/Hero";
 import Projects from "./components/projects/Projects";
 import "./utils/_theme.module.scss";
 import "./App.scss";
-import Arrow from "./components/arrow/Arrow";
 import Loader from "./components/loader/Loader";
 import { useEffect, useState } from "react";
 import Contact from "./components/contact/Contact";
@@ -14,7 +13,7 @@ import MenuNavigation from "./components/menu-navigation/MenuNavigation";
 
 function App() {
   const [loadPage, setLoadPage] = useState(false);
-  const [fadeOut, setFadeOut] = useState(false);
+  const [fadeOut] = useState(false);
   useEffect(() => {
     const animationTimer = setTimeout(() => {
       setLoadPage(false);

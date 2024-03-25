@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import Reveal from "../../utils/animation-components/Reveal";
 import "./Contact.scss";
 import ScrollReveal from "../../utils/animation-components/ScrollReveal";
 import { ScrollContext } from "../../utils/context/scroll-context";
