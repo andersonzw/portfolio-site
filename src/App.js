@@ -1,15 +1,17 @@
-import About from "./components/about/About";
-import Experience from "./components/experience/Experience";
-import Header from "./components/header/Header";
-import Hero from "./components/hero/Hero";
-import Projects from "./components/projects/Projects";
+
 import "./utils/_theme.module.scss";
 import "./App.scss";
 import Loader from "./components/loader/Loader";
 import { useEffect, useState } from "react";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
+
 import MenuNavigation from "./components/menu-navigation/MenuNavigation";
+import Header from "./page-sections/header/Header";
+import About from "./page-sections/about/About";
+import Projects from "./page-sections/projects/Projects";
+import Experience from "./page-sections/experience/Experience";
+import Contact from "./page-sections/contact/Contact";
+import Footer from "./page-sections/footer/Footer";
+import Hero from "./page-sections/hero/Hero"
 
 function App() {
   const [loadPage, setLoadPage] = useState(false);
