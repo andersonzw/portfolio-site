@@ -10,7 +10,7 @@ export const MenuProvider = ({ children }) => {
 
   const openNavigatorMenu = () => {
     setOpenMenu(true);
-    console.log("menu opened");
+
   };
 
   const closeNavigatorMenu = () => {

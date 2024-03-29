@@ -27,13 +27,10 @@
       height: 100%;
       object-fit: cover;
       border-radius: 20px;
-      opacity: 0.65;
       transition: 0.3s;
     }
 
-    .card-image:hover {
-      opacity: 1;
-    }
+
   }
   .card-description {
     gap: 0.5rem;

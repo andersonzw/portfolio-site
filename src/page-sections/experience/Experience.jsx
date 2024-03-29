@@ -4,19 +4,20 @@ import ExperienceCard from "./experience-card/ExperienceCard";
 import "./Experience.scss";
 import { Reveal } from "../../utils/animation-components/Reveal";
 import { ScrollContext } from "../../utils/context/scroll-context";
-const Experience = () => {
+import HeaderLine from "../../components/header-line/HeaderLine";
+const Experience = ({lightMode}) => {
   const { experienceRef } = useContext(ScrollContext);
   return (
     <section ref={experienceRef} className="experience-section">
       <div className="innerWidth paddings flexColCenter experience-container">
         <div className="header-section">
           <Reveal>
-            <h1 className="section-title">
+            <h1 className={`section-title ${lightMode ? "light-theme" : null}`}>
               Experience
               <div className="separator" />
             </h1>
           </Reveal>
-          <div className="header-line" />
+          <HeaderLine/>
         </div>
 
         <div className="experience-list-container">

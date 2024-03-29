@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./ExperienceCard.scss";
 import Reveal from "../../../utils/animation-components/Reveal";
+import { ThemeContext } from "../../../utils/context/theme-context";
 const ExperienceCard = ({ experience }) => {
   const { company, jobTitle, jobDate, jobCity, jobDescription, jobSkills } =
     experience;
+  const {lightMode} = useContext(ThemeContext)
   return (
     <div className="experience-card">
       <div className="card-header">
@@ -29,7 +31,7 @@ const ExperienceCard = ({ experience }) => {
         </Reveal>
       </div>
       <Reveal>
-        <div className="card-skills">
+        <div className={`card-skills ${lightMode ? 'light-theme' : null}`}>
           {jobSkills.map((skill, i) => (
             <span key={i}>{skill}</span>
           ))}

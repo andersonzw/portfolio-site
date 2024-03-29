@@ -1,0 +1,14 @@
+@use "../../utils/theme.module";
+.header-line {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: white;
+  opacity: 0.3;
+  flex: 1;
+}
+
+
+  .header-line.light-theme {
+    background-color: rgba(0, 0, 0, 0.753);
+  }

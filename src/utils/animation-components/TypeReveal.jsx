@@ -31,7 +31,7 @@ function CursorBlinker() {
 }
 
 export default function TextAnim({ children }) {
-  console.log(children.props.children);
+
   const baseText = children.props.children;
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));

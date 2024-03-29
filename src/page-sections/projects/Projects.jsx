@@ -5,20 +5,21 @@ import ProjectCard from "./project-card/ProjectCard";
 import ScrollReveal from "../../utils/animation-components/ScrollReveal";
 import Reveal from "../../utils/animation-components/Reveal";
 import { ScrollContext } from "../../utils/context/scroll-context";
-const Projects = () => {
+import HeaderLine from "../../components/header-line/HeaderLine";
+const Projects = ({lightMode}) => {
   const { projectRef } = useContext(ScrollContext);
 
   return (
     <section ref={projectRef} id="projects" className="projects-section">
       <div className="innerWidth paddings flexColCenter projects-container">
-        <div className="header-section">
-          <h1 className="section-title">
+        <div className=" header-section">
+          <h1 className={`section-title ${lightMode ? "light-theme" : null}`}>
             <Reveal>
               Projects
               <div className="separator" />
             </Reveal>
           </h1>
-          <div className="header-line" />
+          <HeaderLine/>
         </div>
 
         <Reveal>

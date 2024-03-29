@@ -5,19 +5,20 @@ import otherSkills from "../../utils/other_skills.json";
 import SkillCard from "./skill-card/SkillCard";
 import Reveal from "../../utils/animation-components/Reveal";
 import { ScrollContext } from "../../utils/context/scroll-context";
-const About = () => {
+import HeaderLine from "../../components/header-line/HeaderLine";
+const About = ({lightMode}) => {
   const {aboutRef} = useContext(ScrollContext)
   return (
     <section ref = {aboutRef} id ="about" className="about-section">
       <div className="flexColCenter paddings innerWidth about-container">
         <div className="header-section">
-          <h1 className="section-title">
+          <h1 className={`section-title ${lightMode ? "light-theme" : null}`}>
             <Reveal>
               Tech Stack
               <div className="separator" />
             </Reveal>
           </h1>
-          <div className="header-line" />
+          <HeaderLine/>
         </div>
         <Reveal>
           <p className="primary-text">

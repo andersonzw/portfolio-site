@@ -1,5 +1,5 @@
 @use "./utils/theme.module";
-body {
+.App {
   background-color: theme.$surface-100;
   color: #ffff;
 }
@@ -89,13 +89,7 @@ a {
   font-size: 1.5rem;
   font-weight: 600;
 }
-.separator {
-  background-color: theme.$primary-300;
-  height: 0.4rem;
-  width: 2rem;
-  margin: auto;
-  border-radius: 2rem;
-}
+
 .section-title {
   color: white;
   font-size: 3.4rem;
@@ -107,17 +101,31 @@ a {
   align-items: center;
   width: 100%;
 }
-.header-line {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background: white;
-  opacity: 0.3;
-  flex: 1;
-}
 
 h2 {
   font-size: clamp(0.7rem, calc(1rem + 1.2vw), 1.5rem);
+}
+.separator {
+  background-color: theme.$primary-300;
+  height: 0.4rem;
+  width: 2rem;
+  margin: auto;
+  border-radius: 2rem;
+}
+
+//light mode
+.App.light-theme {
+  color: #393c44;
+  background-color: white;
+
+}
+
+.section-title.light-theme{
+  color: #393c44;
+}
+
+
+body.light-theme {
 }
 // --text-xs: 1.6rem;
 // --text-sm: 1.8rem;

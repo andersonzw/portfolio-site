@@ -1,8 +1,7 @@
-
 import "./utils/_theme.module.scss";
-import "./App.scss";
+
 import Loader from "./components/loader/Loader";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import MenuNavigation from "./components/menu-navigation/MenuNavigation";
 import Header from "./page-sections/header/Header";
@@ -11,11 +10,17 @@ import Projects from "./page-sections/projects/Projects";
 import Experience from "./page-sections/experience/Experience";
 import Contact from "./page-sections/contact/Contact";
 import Footer from "./page-sections/footer/Footer";
-import Hero from "./page-sections/hero/Hero"
+import Hero from "./page-sections/hero/Hero";
+import { ThemeContext } from "./utils/context/theme-context";
 
 function App() {
   const [loadPage, setLoadPage] = useState(false);
   const [fadeOut] = useState(false);
+  const { lightMode } = useContext(ThemeContext);
+  useEffect(() => {
+    console.log(lightMode);
+  }, [lightMode]);
+
   useEffect(() => {
     const animationTimer = setTimeout(() => {
       setLoadPage(false);
@@ -29,15 +34,15 @@ function App() {
       {loadPage ? (
         <Loader className={`${fadeOut ? "fade-out" : ""}`} />
       ) : (
-        <div className="App">
-          <MenuNavigation/>
-          <Header />
-          <Hero />
-          <About />
-          <Projects />
-          <Experience />
-          <Contact />
-          <Footer/>
+        <div className={`App ${lightMode ? "light-theme" : null}`}>
+          <MenuNavigation lightMode={lightMode} />
+          <Header lightMode={lightMode} />
+          <Hero lightMode={lightMode} />
+          <About lightMode={lightMode} />
+          <Projects lightMode={lightMode} />
+          <Experience lightMode={lightMode} />
+          <Contact lightMode={lightMode} />
+          <Footer lightMode={lightMode} />
         </div>
       )}
     </>
