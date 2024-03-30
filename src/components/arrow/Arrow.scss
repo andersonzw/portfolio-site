@@ -18,6 +18,9 @@
     animation: arrow 2s infinite;
     -webkit-animation: arrow 2s infinite; 
   }
+  .arrows.light-theme path {
+    stroke: #070707;
+  }
   
   @keyframes arrow
   {

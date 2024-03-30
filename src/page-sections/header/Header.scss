@@ -16,10 +16,15 @@
     line-height: 5;
     user-select: none;
   }
-  p:hover {
+  p:hover{
     color: theme.$primary-100;
   }
+
+  .menu-icon{
+    display: none;
+  }
 }
+
 
 .header-logo {
   height: 50px;
@@ -33,23 +38,24 @@
   gap: 5rem;
 }
 
-.header-menu-btn {
-  display: none;
-  cursor: pointer;
-  user-select: none;
-  margin-left: auto;
-}
+
 
 @media (max-width: 870px) {
   .header-logo {
     height: 40px;
     width: 40px;
   }
-  .header-menu-btn {
-    display: block;
+
+  .header-container{
+    .light-icon,
+    .github-icon,
+    .header-navigator {
+      display: none;
+    }
+    .menu-icon {
+      display: block;
+      margin-left: auto;
+    }
   }
-  .header-navigator,
-  .header-github-btn {
-    display: none;
-  }
+
 }

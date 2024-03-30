@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation, easeOut } from "framer-motion";
-export const ScrollReveal = ({ children, width = "fit-content", y= 500, }) => {
+export const ScrollReveal = ({ children, width = "fit-content", y= 500, duration = 0.65}) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
   const mainControls = useAnimation();
@@ -19,7 +19,7 @@ export const ScrollReveal = ({ children, width = "fit-content", y= 500, }) => {
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.8, ease:"easeOut" }}
+        transition={{ duration: duration, ease:"easeOut" }}
       >
         {children}
       </motion.div>

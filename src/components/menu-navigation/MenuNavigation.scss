@@ -11,11 +11,11 @@
   left: 0;
   top: 0;
 
-  .close-button > img {
+  .close-icon{
     position: fixed;
     height: 40px;
-    top: 1rem;
-    right: 1.2rem;
+    top: 18px;
+    right: 24px;
     font-size: 1.5rem;
     cursor: pointer;
     user-select: none;
@@ -35,13 +35,21 @@
     ul:hover {
       color: theme.$primary-100;
     }
-    img {
+    .light-icon {
       height: 40px;
       text-align: center;
       cursor: pointer;
       width: 40px;
       margin: auto;
+      color: white;
+  
     }
+
+    .light-icon:hover {
+      color: rgb(255, 198, 114);
+    }
+
+ 
   }
 }
 
