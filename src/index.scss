@@ -2,6 +2,7 @@
 .App {
   background-color: theme.$surface-100;
   color: #ffff;
+  position: relative;
 }
 ::selection {
   background: theme.$primary-200;

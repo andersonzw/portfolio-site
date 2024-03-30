@@ -11,31 +11,47 @@
   left: 0;
   top: 0;
 
-  .close-button {
+  .close-button > img {
     position: fixed;
+    height: 40px;
     top: 1rem;
     right: 1.2rem;
     font-size: 1.5rem;
     cursor: pointer;
     user-select: none;
     fill: white;
-    svg {
-      height: 42px;
-      fill: white;
-    }
   }
 
   .navigation-links {
+    display: flex;
+    flex-direction: column;
     ul {
       font-size: clamp(0.7rem, calc(1rem + 1.2vw), 1.5rem);
       margin-bottom: 2rem;
       text-align: center;
       font-weight: 600;
       cursor: pointer;
-
     }
     ul:hover {
       color: theme.$primary-100;
+    }
+    img {
+      height: 40px;
+      text-align: center;
+      cursor: pointer;
+      width: 40px;
+      margin: auto;
+    }
+  }
+}
+
+.menu-navigation-container.light-theme {
+  .navigation-links {
+    ul {
+      color: white;
+    }
+    ul:hover {
+      color: rgba($color: #a08fff, $alpha: 1);
     }
   }
 }

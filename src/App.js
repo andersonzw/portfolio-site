@@ -1,5 +1,5 @@
 import "./utils/_theme.module.scss";
-
+import "./App.scss"
 import Loader from "./components/loader/Loader";
 import { useContext, useEffect, useState } from "react";
 
