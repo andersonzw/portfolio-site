@@ -1,7 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import colors from "../_theme.module.scss"
+import { ThemeContext } from "../context/theme-context";
 export const Reveal = ({ children, width = "fit-content", className}) => {
+  const {lightMode} = useContext(ThemeContext)
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -36,7 +38,7 @@ export const Reveal = ({ children, width = "fit-content", className}) => {
             bottom:4,
             left:0,
             right:0,
-            backgroundColor:`${colors.scroll}`,
+            backgroundColor:`${!lightMode? colors.scroll : colors.scrollLight}`,
             zIndex:20
         }}
       ></motion.div>

@@ -22,8 +22,14 @@ $surface-mixed-400: #685d58;
 $surface-mixed-500: #807672;
 $surface-mixed-600: #98908c;
 
+/** SCSS DARK THEME PRIMARY COLORS **/
+$primary-100-light: #22b3df;
+$primary-200-light: #4fc5e9; //scroll-reveal colour
+$primary-300-light: #26bde2;  //text font
+
 
 
 :export {
   scroll: $primary-200;
+  scrollLight: $primary-200-light;
 }

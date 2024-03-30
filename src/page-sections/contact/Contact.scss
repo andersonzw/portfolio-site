@@ -21,14 +21,9 @@
     cursor: pointer;
     height: 100px;
     padding: 1rem 2rem;
-    img {
-      height: 40px;
-    }
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 
-  }
-  .email-container.light-theme {
-    border: 1px solid theme.$primary-100;
+    transition: background-color 0.3s ease, transform 0.2s ease,
+      box-shadow 0.2s ease;
   }
 
   .email-container:hover {
@@ -40,10 +35,17 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
 }
-
+.App.light-theme .contact-container {
+  .email-container:hover {
+    border: 1px solid theme.$primary-100-light;
+    background-color: theme.$primary-200-light;
+  }
+  .email-container {
+    border: 1px solid theme.$primary-100-light;
+  }
+}
 
 @media (max-width: 480px) {
-
   .contact-container {
     .email-container {
       padding: 0.4rem;

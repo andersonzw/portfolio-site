@@ -8,7 +8,7 @@ export const ThemeContext = React.createContext({
 export const ThemeProvider = ({ children }) => {
   const [lightMode, setLightMode] = useState(()=> {
     const storedMode = localStorage.getItem('storedMode')
-    return storedMode === 'true' ? true : false
+    return storedMode === 'false' ? false : true
   });
 
   const toggleLightMode = () => {

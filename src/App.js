@@ -1,5 +1,5 @@
 import "./utils/_theme.module.scss";
-import "./App.scss"
+import "./App.scss";
 import Loader from "./components/loader/Loader";
 import { useContext, useEffect, useState } from "react";
 
@@ -17,10 +17,10 @@ function App() {
   const [loadPage, setLoadPage] = useState(false);
   const [fadeOut] = useState(false);
   const { lightMode } = useContext(ThemeContext);
-  useEffect(() => {
-    console.log(lightMode);
-  }, [lightMode]);
 
+  useEffect(() => {
+    document.body.classList = (`${lightMode ? "light-theme" : ''}`);
+  }, [lightMode]);
   useEffect(() => {
     const animationTimer = setTimeout(() => {
       setLoadPage(false);
@@ -35,14 +35,14 @@ function App() {
         <Loader className={`${fadeOut ? "fade-out" : ""}`} />
       ) : (
         <div className={`App ${lightMode ? "light-theme" : null}`}>
-          <MenuNavigation lightMode={lightMode} />
-          <Header lightMode={lightMode} />
-          <Hero lightMode={lightMode} />
-          <About lightMode={lightMode} />
-          <Projects lightMode={lightMode} />
-          <Experience lightMode={lightMode} />
-          <Contact lightMode={lightMode} />
-          <Footer lightMode={lightMode} />
+          <MenuNavigation/>
+          <Header />
+          <Hero />
+          <About />
+          <Projects />
+          <Experience />
+          <Contact />
+          <Footer/>
         </div>
       )}
     </>

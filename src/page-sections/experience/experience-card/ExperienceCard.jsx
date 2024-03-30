@@ -5,7 +5,7 @@ import { ThemeContext } from "../../../utils/context/theme-context";
 const ExperienceCard = ({ experience }) => {
   const { company, jobTitle, jobDate, jobCity, jobDescription, jobSkills } =
     experience;
-  const {lightMode} = useContext(ThemeContext)
+  const { lightMode } = useContext(ThemeContext);
   return (
     <div className="experience-card">
       <div className="card-header">
@@ -31,7 +31,7 @@ const ExperienceCard = ({ experience }) => {
         </Reveal>
       </div>
       <Reveal>
-        <div className={`card-skills ${lightMode ? 'light-theme' : null}`}>
+        <div className="card-skills">
           {jobSkills.map((skill, i) => (
             <span key={i}>{skill}</span>
           ))}

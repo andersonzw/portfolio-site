@@ -9,7 +9,7 @@ import { RxCross2 } from "react-icons/rx";
 
 const MenuNavigation = () => {
   const { closeNavigatorMenu } = useContext(MenuContext);
-  const { lightMode, toggleLightMode } = useContext(ThemeContext);
+  const {toggleLightMode } = useContext(ThemeContext);
   const { aboutRef, projectRef, contactRef, experienceRef, scrollToRef } =
     useContext(ScrollContext);
   const scrollAndClose = (ref) => {
@@ -20,9 +20,7 @@ const MenuNavigation = () => {
     <>
       <SlidingMenu>
         <div
-          className={`flexColCenter menu-navigation-container ${
-            lightMode ? "light-theme" : null
-          }`}
+          className="flexColCenter menu-navigation-container"
         >
           <RxCross2
             className="react-icon close-icon"

@@ -1,12 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
 import "./ProjectCard.scss";
-import { ThemeContext } from "../../../utils/context/theme-context";
 const ProjectCard = ({ project }) => {
   const { projectName, image, description, tools, link, githubLink } = project;
-  const { lightMode } = useContext(ThemeContext);
   return (
     <div className="project-card">
       <div className="image-container">
@@ -17,11 +15,11 @@ const ProjectCard = ({ project }) => {
           <h2>{projectName}</h2>
           <div className="header-line" />
           <a target="_blank" href={githubLink} rel="noreferrer">
-            <FaGithub className={`icon ${lightMode ? "light-theme" : null}`} />
+            <FaGithub className="icon" />
           </a>
           <a target="_blank" href={link} rel="noreferrer">
             <FiExternalLink
-              className={`icon ${lightMode ? "light-theme" : null}`}
+              className="icon"
             />
           </a>
         </div>

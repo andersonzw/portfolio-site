@@ -11,7 +11,7 @@
   left: 0;
   top: 0;
 
-  .close-icon{
+  .close-icon {
     position: fixed;
     height: 40px;
     top: 18px;
@@ -19,7 +19,7 @@
     font-size: 1.5rem;
     cursor: pointer;
     user-select: none;
-    fill: white;
+    color: white;
   }
 
   .navigation-links {
@@ -41,25 +41,11 @@
       cursor: pointer;
       width: 40px;
       margin: auto;
-      color: white;
-  
-    }
-
-    .light-icon:hover {
       color: rgb(255, 198, 114);
     }
 
- 
-  }
-}
-
-.menu-navigation-container.light-theme {
-  .navigation-links {
-    ul {
-      color: white;
-    }
-    ul:hover {
-      color: rgba($color: #a08fff, $alpha: 1);
+    .light-icon:active {
+      scale: 1.2;
     }
   }
 }
