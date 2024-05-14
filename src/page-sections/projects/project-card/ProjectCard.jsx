@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
-
+import HeaderLine from "../../../components/header-line/HeaderLine"
 import "./ProjectCard.scss";
 const ProjectCard = ({ project }) => {
   const { projectName, image, description, tools, link, githubLink } = project;
@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
       <div className="flexColStart card-description">
         <div className="header">
           <h2>{projectName}</h2>
-          <div className="header-line" />
+          <HeaderLine/>
           <a target="_blank" href={githubLink} rel="noreferrer">
             <FaGithub className="icon" />
           </a>

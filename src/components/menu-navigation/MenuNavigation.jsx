@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { MenuContext } from "../../utils/context/menu-context";
 import "./MenuNavigation.scss";
 import { ScrollContext } from "../../utils/context/scroll-context";
@@ -9,7 +9,8 @@ import { RxCross2 } from "react-icons/rx";
 
 const MenuNavigation = () => {
   const { closeNavigatorMenu } = useContext(MenuContext);
-  const {toggleLightMode } = useContext(ThemeContext);
+  const { toggleLightMode } = useContext(ThemeContext);
+
   const { aboutRef, projectRef, contactRef, experienceRef, scrollToRef } =
     useContext(ScrollContext);
   const scrollAndClose = (ref) => {
@@ -20,6 +21,7 @@ const MenuNavigation = () => {
     <>
       <SlidingMenu>
         <div
+          onClick={() => closeNavigatorMenu()}
           className="flexColCenter menu-navigation-container"
         >
           <RxCross2

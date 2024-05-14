@@ -162,7 +162,9 @@ h2 {
     color: #282a2e;
     border: 1px solid rgba(0, 0, 0, 0.418);
   }
-
+  .card-separator { 
+    background-color: black;
+  }
   .project-card {
     .icon {
       opacity: 1;
