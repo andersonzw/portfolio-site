@@ -14,7 +14,7 @@ import Hero from "./page-sections/hero/Hero";
 import { ThemeContext } from "./utils/context/theme-context";
 
 function App() {
-  const [loadPage, setLoadPage] = useState(true);
+  const [loadPage, setLoadPage] = useState(false);
   const [fadeOut] = useState(false);
   const { lightMode } = useContext(ThemeContext);
 

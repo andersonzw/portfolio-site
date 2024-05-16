@@ -1,26 +1,29 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
-import HeaderLine from "../../../components/header-line/HeaderLine"
+import HeaderLine from "../../../components/header-line/HeaderLine";
 import "./ProjectCard.scss";
 const ProjectCard = ({ project }) => {
   const { projectName, image, description, tools, link, githubLink } = project;
   return (
     <div className="project-card">
       <div className="image-container">
+        <img
+          className="card-image-overlay"
+          src="/assets/placeholder-pp.jpg"
+          alt=""
+        />
         <img className="card-image" src={image} alt="" />
       </div>
       <div className="flexColStart card-description">
         <div className="header">
           <h2>{projectName}</h2>
-          <HeaderLine/>
+          <HeaderLine />
+          <a target="_blank" className="live-demo" href={link} rel="noreferrer">
+            Live Demo
+          </a>
           <a target="_blank" href={githubLink} rel="noreferrer">
             <FaGithub className="icon" />
-          </a>
-          <a target="_blank" href={link} rel="noreferrer">
-            <FiExternalLink
-              className="icon"
-            />
           </a>
         </div>
 

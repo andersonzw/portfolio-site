@@ -1,5 +1,21 @@
 [
   {
+    "projectName": "Jlptdict",
+    "image": "/assets/jlptdict.png",
+    "description": "Repository of grammar for Japanese Language Proficiency Test",
+    "tools": ["Javascript", "Typescript", "Redux", "Firebase"],
+    "link": "https://jlptgrammar.netlify.app/",
+    "githubLink": "https://github.com/andersonzw/nihongokyoshi-webscrape-py"
+  },
+  {
+    "projectName": "Crown & Couture",
+    "image": "/assets/crowncouture.png",
+    "description": "A modern e-commerce platform for clothing featuring a fully integrated payment system via Stripe API",
+    "tools": ["React", "Redux", "Firebase", "Swipe"],
+    "link": "https://crowncouture.netlify.app/",
+    "githubLink": "https://www.github.com/"
+  },
+  {
     "projectName": "Commission Manager",
     "image": "/assets/placeholder-proj.jpeg",
     "description": "A dashboard tailored for artists, streamlining the management of commissions and requests. ",
@@ -7,28 +23,12 @@
     "link": "https://www.google.com/",
     "githubLink": "https://www.github.com/"
   },
-  {
-    "projectName": "E-Commerce",
-    "image": "/assets/placeholder-proj.jpeg",
-    "description": "A modern e-commerce platform for clothing featuring a fully integrated payment system via Stripe API",
-    "tools": ["Typescript", "React", "Redux", "Firebase", "Swipe"],
-    "link": "https://www.google.com/",
-    "githubLink": "https://www.github.com/"
-  },
-  {
-    "projectName": "Milkbot",
-    "image": "/assets/placeholder-proj.jpeg",
-    "description": "A multipurpose discord bot built using Javascript and Node.js.",
-    "tools": ["Javascript", "Node.js", "Discord.js"],
-    "link": "https://www.google.com/",
-    "githubLink": "https://www.github.com/"
-  },
 
   {
-    "projectName": "Custom Extensions",
-    "image": "/assets/placeholder-proj.jpeg",
-    "description": "Quality of life chrome extensions",
-    "tools": ["HTML", "Javascript"],
+    "projectName": "Milkbot",
+    "image": "/assets/image-29.webp",
+    "description": "A multipurpose discord bot built using Javascript and Node.js.",
+    "tools": ["Javascript", "Node.js", "Discord.js"],
     "link": "https://www.google.com/",
     "githubLink": "https://www.github.com/"
   }
