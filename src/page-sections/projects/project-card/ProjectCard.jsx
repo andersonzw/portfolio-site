@@ -8,11 +8,13 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="project-card">
       <div className="image-container">
-        <img
+       <a target="_blank" className="live-demo" href={link} rel="noreferrer">
+       <img
           className="card-image-overlay"
           src="/assets/placeholder-pp.jpg"
           alt=""
-        />
+        />   
+      </a>
         <img className="card-image" src={image} alt="" />
       </div>
       <div className="flexColStart card-description">

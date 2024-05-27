@@ -27,7 +27,8 @@ const ExperienceCard = ({ experience }) => {
 
       <div className="card-description">
         <Reveal>
-          <span className="desktop-680px">{jobDescription}</span>
+          <div className="date-mobile">{jobDate}</div>
+          <span className="">{jobDescription}</span>
         </Reveal>
       </div>
       <Reveal>

@@ -3,9 +3,9 @@
     "projectName": "Jlptdict",
     "image": "/assets/jlptdict.png",
     "description": "Repository of grammar for Japanese Language Proficiency Test",
-    "tools": ["Javascript", "Typescript", "Redux", "Firebase"],
+    "tools": ["Javascript", "Typescript", "Redux", "Firebase", "Tailwind"],
     "link": "https://jlptgrammar.netlify.app/",
-    "githubLink": "https://github.com/andersonzw/nihongokyoshi-webscrape-py"
+    "githubLink": "https://github.com/andersonzw/jlpt-dict"
   },
   {
     "projectName": "Crown & Couture",

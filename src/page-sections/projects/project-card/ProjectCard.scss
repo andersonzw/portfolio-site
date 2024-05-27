@@ -16,18 +16,21 @@
 
 .project-card {
   width: 100%;
+
   .image-container {
     width: 100%;
     height: 300px;
     margin-bottom: 1rem;
     position: relative;
 
+    cursor: pointer;
     .card-image {
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 20px;
       transition: 0.3s;
+      box-shadow: 2px 4px 4px 0px #7272721f;
     }
     .card-image-overlay {
       position: absolute;
@@ -36,7 +39,9 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: 18px;
       opacity: 0;
+
     }
   }
   .image-container:hover {
