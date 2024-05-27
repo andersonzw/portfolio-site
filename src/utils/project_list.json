@@ -16,7 +16,7 @@
     "githubLink": "https://www.github.com/"
   },
   {
-    "projectName": "Commission Manager",
+    "projectName": "Com.Art",
     "image": "/assets/placeholder-proj.jpeg",
     "description": "A dashboard tailored for artists, streamlining the management of commissions and requests. ",
     "tools": ["React", "Redux", "Firebase"],
