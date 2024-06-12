@@ -16,11 +16,11 @@
     "githubLink": "https://www.github.com/"
   },
   {
-    "projectName": "Com.Art",
-    "image": "/assets/placeholder-proj.jpeg",
-    "description": "A dashboard tailored for artists, streamlining the management of commissions and requests. ",
-    "tools": ["React", "Redux", "Firebase"],
-    "link": "https://www.google.com/",
+    "projectName": "SamuelLiu",
+    "image": "/assets/samliu.PNG",
+    "description": "Portfolio website trailored to videography",
+    "tools": ["React", "Tailwind"],
+    "link": "https://samuel-liu.netlify.app/",
     "githubLink": "https://www.github.com/"
   },
 

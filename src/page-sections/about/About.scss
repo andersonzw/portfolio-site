@@ -14,13 +14,17 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+
   .skill-card {
     width: 200px;
     gap: 0.6rem;
+    pointer-events: none;
   }
   .skill-svg {
     height: 60px;
     width: 60px;
+    user-select: none;
+    pointer-events: none;
   }
 }
 
