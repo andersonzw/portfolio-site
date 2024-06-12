@@ -1,12 +1,22 @@
-import React, { useContext } from "react";
-import "./Contact.scss";
-import ScrollReveal from "../../utils/animation-components/ScrollReveal";
-import { ScrollContext } from "../../utils/context/scroll-context";
-import HeaderLine from "../../components/header-line/HeaderLine";
-import { CiMail } from "react-icons/ci";
-
+import React, { useContext, useEffect, useState } from "react"
+import "./Contact.scss"
+import ScrollReveal from "../../utils/animation-components/ScrollReveal"
+import { ScrollContext } from "../../utils/context/scroll-context"
+import HeaderLine from "../../components/header-line/HeaderLine"
+import { CiMail } from "react-icons/ci"
+import ClickyButton from "../../components/interactive-btn/ClickyButton"
+import Clipboard from "react-clipboard-animation"
 const Contact = () => {
-  const { contactRef } = useContext(ScrollContext);
+  const [copied, setCopied] = useState(false)
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (copied) setCopied(false)
+    }, 1000)
+
+    return () => clearTimeout(timeout)
+  }, [copied])
+  const { contactRef } = useContext(ScrollContext)
   return (
     <section ref={contactRef} className="contact-section">
       <div className="innerWidth paddings flexColCenter contact-container">
@@ -22,16 +32,29 @@ const Contact = () => {
         </div>
         <ScrollReveal y={200} duration={0.4}>
           <div
-            className="email-container"
+            onClick={() => {
+              navigator.clipboard.writeText("anderson.zw.yang@gmail.com")
+              setCopied(true)
+            }}
           >
-            <CiMail className="react-icon mail-icon" />
-
-            <p>anderson.zw.yang@gmail.com</p>
+            <ClickyButton
+              content={
+                <>
+                  <Clipboard
+                    copied={copied}
+                    setCopied={setCopied}
+                    color="white"
+                  />
+                  <p>anderson.zw.yang@gmail.com</p>
+                </>
+              }
+              height={100}
+            />
           </div>
         </ScrollReveal>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

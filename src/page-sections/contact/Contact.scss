@@ -44,6 +44,12 @@
     border: 1px solid theme.$primary-100-light;
   }
 }
+.clicky-button {
+  .button > svg {
+    width: 30px;
+    height: 30px;
+  }
+}
 
 @media (max-width: 480px) {
   .contact-container {

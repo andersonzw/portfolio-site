@@ -47,13 +47,17 @@
       pointer-events: none;
     }
   }
-  .image-container:hover {
-    .card-image-overlay {
-      opacity: 1;
-      transition: opacity 0.23s ease-in;
-      user-select: none;
+  // disable hover effect for touch screens
+  @media (hover: hover) and (pointer: fine) {
+    .image-container:hover {
+      .card-image-overlay {
+        opacity: 1;
+        transition: opacity 0.23s ease-in;
+        user-select: none;
+      }
     }
   }
+
   .card-description {
     gap: 0.5rem;
     .header {
@@ -95,4 +99,7 @@
       gap: 0.2rem;
     }
   }
+}
+
+@media (max-width: 768px) {
 }

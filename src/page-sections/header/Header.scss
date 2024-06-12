@@ -16,15 +16,19 @@
     line-height: 5;
     user-select: none;
   }
-  p:hover{
+  p:hover {
     color: theme.$primary-100;
   }
 
-  .menu-icon{
+  .menu-icon {
     display: none;
   }
 }
-
+.App.light-theme {
+  p:hover {
+    color: theme.$primary-300-light;
+  }
+}
 
 .header-logo {
   height: 50px;
@@ -38,15 +42,13 @@
   gap: 5rem;
 }
 
-
-
 @media (max-width: 870px) {
   .header-logo {
     height: 40px;
     width: 40px;
   }
 
-  .header-container{
+  .header-container {
     .light-icon,
     .github-icon,
     .header-navigator {
@@ -57,5 +59,4 @@
       margin-left: auto;
     }
   }
-
 }
