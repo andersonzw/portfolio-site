@@ -6,7 +6,9 @@ import HeaderLine from "../../components/header-line/HeaderLine"
 import { CiMail } from "react-icons/ci"
 import ClickyButton from "../../components/interactive-btn/ClickyButton"
 import Clipboard from "react-clipboard-animation"
+import { ThemeContext } from "../../utils/context/theme-context"
 const Contact = () => {
+  const { lightMode } = useContext(ThemeContext)
   const [copied, setCopied] = useState(false)
 
   useEffect(() => {
@@ -43,7 +45,7 @@ const Contact = () => {
                   <Clipboard
                     copied={copied}
                     setCopied={setCopied}
-                    color="white"
+                    color={`${lightMode ? "#393c44" : "white"}`}
                   />
                   <p>anderson.zw.yang@gmail.com</p>
                 </>

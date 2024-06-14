@@ -1,20 +1,22 @@
-import React, { useContext } from "react";
-import "./Header.scss";
-import { MenuContext } from "../../utils/context/menu-context";
-import { ScrollContext } from "../../utils/context/scroll-context";
-import { ThemeContext } from "../../utils/context/theme-context";
-import { FaGithub } from "react-icons/fa";
-import { MdLightMode } from "react-icons/md";
-import { TbMenu2 } from "react-icons/tb";
+import React, { useContext } from "react"
+import "./Header.scss"
+import { MenuContext } from "../../utils/context/menu-context"
+import { ScrollContext } from "../../utils/context/scroll-context"
+import { ThemeContext } from "../../utils/context/theme-context"
+import { FaGithub } from "react-icons/fa"
+import { MdLightMode } from "react-icons/md"
+import { TbMenu2 } from "react-icons/tb"
 
 const Header = () => {
-  const { openNavigatorMenu } = useContext(MenuContext);
+  const { openNavigatorMenu } = useContext(MenuContext)
   const { projectRef, contactRef, experienceRef, scrollToRef } =
-    useContext(ScrollContext);
-  const { lightMode, toggleLightMode } = useContext(ThemeContext);
+    useContext(ScrollContext)
+  const { lightMode, toggleLightMode } = useContext(ThemeContext)
   return (
     <header className="paddings innerWidth flexCenter header-container">
-      <FaGithub className={` react-icon github-icon`} />
+      <a href="https://github.com/andersonzw/" target="_blank" rel="noreferrer">
+        <FaGithub className={` react-icon github-icon`} />
+      </a>
 
       <div className="flexCenter header-navigator">
         {/* <p onClick={() => scrollToRef(aboutRef)}>About</p> */}
@@ -25,17 +27,17 @@ const Header = () => {
       <MdLightMode
         className="react-icon light-icon"
         onClick={() => {
-          toggleLightMode();
+          toggleLightMode()
         }}
       />
       <TbMenu2
         className="react-icon menu-icon"
         onClick={() => {
-          openNavigatorMenu();
+          openNavigatorMenu()
         }}
       />
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
